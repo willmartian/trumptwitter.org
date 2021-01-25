@@ -69,7 +69,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel={"stylesheet"} href={"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"}/>  
+    </Helmet>
   )
 }
 

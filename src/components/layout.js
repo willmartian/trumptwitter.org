@@ -1,15 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,25 +17,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      <header>
+        <nav>
+          <Link to={"/"} style={{textDecoration: "none"}}>
+            <h1>Trump Twitter Archive</h1>
+          </Link>
+        </nav>
+        <p>This website archives the Tweets of former President Donald J. Trump. On January 8th, 2021, the President was <a href="https://web.archive.org/web/20210109031834/https://blog.twitter.com/en_us/topics/company/2020/suspension.html">permanently banned from Twitter.com</a> after inciting an attack on the United States Capitol.</p>
+      </header>
+      <main>{children}</main>
     </>
   )
 }

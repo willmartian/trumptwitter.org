@@ -1,0 +1,16 @@
+dt {
+    font-weight: bold;
+}
+
+dt::after {
+    content: ":";
+    font-weight: bold;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+summary {
+    font-weight: bold;
+}

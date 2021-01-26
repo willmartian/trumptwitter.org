@@ -70,7 +70,9 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link rel={"stylesheet"} href={"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"}/>  
+      <link rel={"stylesheet"} href={"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"}/>
+      <link rel={"webmention"} href="https://webmention.io/trumptwitter.org/webmention" />
+      <link rel={"pingback"} href={"https://webmention.io/trumptwitter.org/xmlrpc"} />  
     </Helmet>
   )
 }

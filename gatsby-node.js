@@ -1,5 +1,4 @@
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions}) => {
     const { createPage } = actions;
@@ -37,11 +36,6 @@ exports.createPages = async ({ graphql, actions}) => {
         }
         createPage({
             path: `realDonaldTrump/status/${node.id}`,
-            component: path.resolve(`./src/components/tweet.js`),
-            context: data
-        })
-        createPage({
-            path: `realDonaldTrump/status/${node.id}/embed.html`,
             component: path.resolve(`./src/components/tweet.js`),
             context: data
         })

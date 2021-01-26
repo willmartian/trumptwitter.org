@@ -7,7 +7,7 @@ const FindTweet = ({ label, placeholder = "e.g. https://twitter.com/realDonaldTr
         <label style={{marginTop: "1em", width: "100%"}}>
             {label}
             <div style={{display: "flex", width: "100%", justifyContent: "space-between", marginTop: ".5em"}}>
-                <input type="input" style="width: 75%;" placeholder={placeholder} />
+                <input type="input" style={{width: "75%"}} placeholder={placeholder} />
                 <button><b>Find Tweet</b></button>
             </div>
         </label>

@@ -11,24 +11,23 @@ const IndexPage = () => (
     <article>
       <header>
         <h2>Using the archive</h2>
-        <p>The archive functions as a drop-in replacement for the now removed tweets.</p>
         <p>Simply replace the orginal domain with <em>trumptwitter.org</em>.</p>
       </header>
       <section>
         <p>
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/realDonaldTrump/status/98454970654916608"><span role="img" aria-label="red x">❌</span> https://<mark class="bad">twitter.com</mark>/realDonaldTrump/status/98454970654916608</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/realDonaldTrump/status/98454970654916608">https://<mark class="bad">twitter.com</mark>/realDonaldTrump/status/98454970654916608</a>
         </p>
         <p>
-          <Link to="/realDonaldTrump/status/98454970654916608"><span role="img" aria-label="green check mark">✅</span> https://<mark class="good">trumptwitter.org</mark>/realDonaldTrump/status/98454970654916608</Link>
+          <Link to="/realDonaldTrump/status/98454970654916608">https://<mark class="good">trumptwitter.org</mark>/realDonaldTrump/status/98454970654916608</Link>
         </p>
         <FindTweet label={"You can also paste a Twitter URL below and be redirected to the archived tweet:"}/>
       </section>
       <section>
-        <details>
+        <details open>
           <summary>
             Web Extension
           </summary>
-          <p>Install the <em>Trump Twitter Archive Web Extension</em> on your browser to automatically swap broken <mark class="bad">twitter.com</mark> links to Trump's tweets with working <mark class="good">trumptwitter.org</mark> links--on <em>every</em> site you visit.</p>
+          <p>Install the <em>Trump Twitter Archive Web Extension</em> on your browser to automatically swap broken <mark class="bad">twitter.com</mark> links to Trump's tweets with working <mark class="good">trumptwitter.org</mark> links—on <em>every</em> site you visit.</p>
           <ul>
             <li>
               <a href="https://addons.mozilla.org/en-US/firefox/addon/trump-twitter-archive/">Add to Firefox</a>
@@ -37,8 +36,8 @@ const IndexPage = () => (
               <p>Add to Chrome <em>(Coming Soon)</em></p>
             </li>
           </ul>
-          <p>Want to test if the extension is working? Try clicking on the Twitter link above, marked by the <span role="img" aria-label="red x">❌</span></p>
-          <p>If you installed the plugin you will be directed to an archived tweet.</p>
+          <p>Want to test if the extension is working? Try clicking on the Twitter link at the top of this page.</p>
+          <p>If you have the plugin installed you will be directed to an archived tweet.</p>
         </details>
       </section>
       <section>    
@@ -62,16 +61,16 @@ const IndexPage = () => (
             <li>
               <b><em>How</em> did you make this archive?</b>
               <p>
-                I used <a href="https://developer.mozilla.org/en-US/docs/Learn">HTML, CSS, and JavaScript.</a> I also used <a href="https://liquidjs.com/">LiquidJS templates</a>, which helped generate about 170,000 files from the Twitter data. 
+                I used <a href="https://developer.mozilla.org/en-US/docs/Learn">HTML, CSS, and JavaScript.</a>
               </p>
               <p>
-                The source code for the archive can be found <a href="https://github.com/willmartian/trump-twitter">here.</a>
+                The source code for the archive can be found <a href="https://github.com/willmartian/trumptwitter.org">here.</a>
               </p>
             </li>
             <li>
               <b>Can I contact you?</b>
               <p>
-                Yes, send an email to <a href="mailto:trumptwitterorg@gmail.com">trumptwitterorg@gmail.com</a>
+                Yes, send an email to <a href="mailto:trumptwitterorg@gmail.com" rel="me">trumptwitterorg@gmail.com</a>
               </p>
             </li>
           </ul>
